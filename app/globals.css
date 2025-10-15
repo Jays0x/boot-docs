@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
+/* =========================
+   🎨 Light Theme Variables
+========================= */
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
+/* =========================
+   ⚙️ Inline Tailwind Theme
+========================= */
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Fonts (using Next.js font variables from layout.tsx) */
+  --font-sans: var(--font-arimo);
+  --font-mono: var(--font-roboto-mono);
 }
 
+/* =========================
+   🌙 Dark Mode (system-based)
+========================= */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0f0f0f;
     --foreground: #ededed;
   }
 }
 
+/* =========================
+   🧱 Base Styles
+========================= */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-arimo), Arial, Helvetica, sans-serif;
+}
+
+code,
+pre {
+  font-family: var(--font-roboto-mono), monospace;
+}
+
+p, span {
+  font-size: 14px;
+}
+
+Link {
+  font-size: 14px;
+}
+
+.container {
+  width: 1580px;
+  padding: 2rem;
+  margin: 0 auto;
 }
