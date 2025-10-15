@@ -79,20 +79,13 @@ export function CodeBlock({ code, type }: CodeBlockProps) {
 }
 
 // -------------------- Tabbed or Single CodeBlock --------------------
-export function CodeBlockTabs({ codes, enabledTabs, singleCode, type }: TabCodeBlockProps) {
-  if (singleCode) {
-    // Single code block mode
-    return <CodeBlock code={singleCode} type={type} />;
-  }
-
-  if (!codes) return null;
-
+export function CodeBlockTabs({ codes = {}, enabledTabs = {}, singleCode, type }: TabCodeBlockProps) {
   const managers: (keyof typeof codes)[] = ["npm", "yarn", "bun", "pnpm"];
-  const filteredManagers = managers.filter((manager) =>
-    enabledTabs ? enabledTabs[manager] && codes[manager] : !!codes[manager]
-  );
-
+  const filteredManagers = managers.filter((manager) => enabledTabs[manager] && codes[manager]);
   const [active, setActive] = useState(filteredManagers[0] || "");
+
+  // Single code block mode
+  if (singleCode) return <CodeBlock code={singleCode} type={type} />;
 
   if (!filteredManagers.length) return null;
 
@@ -117,7 +110,7 @@ export function CodeBlockTabs({ codes, enabledTabs, singleCode, type }: TabCodeB
 
       {/* Active CodeBlock */}
       <CodeBlock
-        code={codes[active as keyof typeof codes] || ""}
+        code={codes[active] || ""}
         type={active as CodeBlockProps["type"]}
       />
     </div>

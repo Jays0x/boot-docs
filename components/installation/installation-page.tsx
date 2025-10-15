@@ -4,7 +4,7 @@ import Badge from '../ui/Badge'
 
 function InstallationPage() {
   return (
-    <div className='font-sans mt-12 w-[700px] space-y-12'>
+    <div className='font-sans mt-12 w-[700px] space-y-12 z-50'>
       {/* Page Title */}
       <h1 className='text-4xl font-bold mb-6'>Installation</h1>
       <p className='text-white/70 mb-8'>
@@ -109,12 +109,14 @@ function InstallationPage() {
           <CodeBlockTabs singleCode={`boot help`} type="bash" />
           <p className='text-white/70 mt-2'>Expected output:</p>
           <CodeBlockTabs singleCode={`Available Commands:
-  save        Save a new command
-  run         Run a saved command
-  create      Scaffold a new project
-  list        Show all saved commands
-  sync        Sync commands with GitHub
-  delete      Remove a saved command`} type="bash" />
+            save        Save a new command
+            run         Run a saved command
+            create      Scaffold a new project
+            list        Show all saved commands
+            sync        Sync commands with GitHub
+            delete      Remove a saved command`} 
+            type="bash"
+          />
           <p className='text-green-400 font-semibold mt-2'>🎉 Congratulations! Boot CLI is installed successfully.</p>
         </section>
 

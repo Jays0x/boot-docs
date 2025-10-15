@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <div className="font-sans flex min-h-screen bg-[#0f0f0f] text-white gap-3">
       {/* Main content area */}
-      <main className="flex-1 px-8 pt-15 ">
+      <main className="flex-1 px-8 pt-15 z-20">
         <InstallationPage />
       </main>
 
