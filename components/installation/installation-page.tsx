@@ -4,16 +4,16 @@ import Badge from '../ui/Badge'
 
 function InstallationPage() {
   return (
-    <div className='font-sans mt-12 w-[700px] space-y-12 z-50'>
+    <div className='font-sans mt-12 space-y-12 w-full'>
       {/* Page Title */}
       <h1 className='text-4xl font-bold mb-6'>Installation</h1>
       <p className='text-white/70 mb-8'>
         Welcome to the installation guide for <strong>Boot CLI</strong>! Follow this guide to install Boot, verify your setup, and optionally connect your GitHub account for syncing saved commands across devices.
       </p>
 
-      <div className='space-y-8'>
+      <div className=''>
         {/* Prerequisites */}
-        <section className='p-6 rounded-lg shadow-md space-y-4'>
+        <section className='pb-6 rounded-lg shadow-md space-y-4'>
           <h2 className='text-2xl font-semibold mb-2'>Prerequisites</h2>
           <p className='text-white/70'>
             Before installing Boot, ensure your system meets the following requirements:
@@ -34,7 +34,7 @@ function InstallationPage() {
         </section>
 
         {/* Installation Methods */}
-        <section className='p-6 rounded-lg shadow-md space-y-6'>
+        <section className='py-6 rounded-lg shadow-md space-y-6'>
           <h2 className='text-2xl font-semibold mb-2'>Installation Methods</h2>
           <CodeBlockTabs
             codes={{
@@ -53,7 +53,7 @@ function InstallationPage() {
         </section>
 
         {/* Updating Boot */}
-        <section className='p-6 rounded-lg shadow-md space-y-4'>
+        <section className='py-6 rounded-lg shadow-md space-y-4'>
           <h2 className='text-2xl font-semibold mb-2'>Updating Boot</h2>
           <p className='text-white/70'>Keep Boot up-to-date with the latest features:</p>
           <CodeBlockTabs
@@ -66,7 +66,7 @@ function InstallationPage() {
         </section>
 
         {/* GitHub Sync */}
-        <section className='p-6 rounded-lg shadow-md space-y-4'>
+        <section className='py-6 rounded-lg shadow-md space-y-4 '>
           <h2 className='text-2xl font-semibold mb-2'>Enable GitHub Sync</h2>
           <p className='text-white/70'>Sync your saved commands across devices:</p>
           <CodeBlockTabs singleCode={`boot sync github`} type="bash" />
@@ -104,7 +104,7 @@ function InstallationPage() {
         </section>
 
         {/* Verification */}
-        <section className='p-6 rounded-lg shadow-md space-y-4'>
+        <section className='py-6 rounded-lg shadow-md space-y-4'>
           <h2 className='text-2xl font-semibold mb-2'>Verify Installation</h2>
           <CodeBlockTabs singleCode={`boot help`} type="bash" />
           <p className='text-white/70 mt-2'>Expected output:</p>
@@ -121,7 +121,7 @@ function InstallationPage() {
         </section>
 
         {/* Next Steps */}
-        <section className='p-6 rounded-lg shadow-md space-y-4'>
+        <section className='py-6 rounded-lg shadow-md space-y-4'>
           <h2 className='text-2xl font-semibold mb-2'>Next Steps</h2>
           <ul className='list-decimal list-inside text-white/70 space-y-2'>
             <li><a href="#" className='text-blue-500 underline'>Getting Started</a> — Learn to save, list, and run commands</li>

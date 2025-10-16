@@ -6,7 +6,7 @@ import Badge from "../ui/Badge";
 
 export default function SaveCommandsPage() {
   return (
-    <div className="font-sans mt-12 w-[700px] space-y-12">
+    <div className="font-sans mt-12 space-y-12 w-full">
       {/* Title */}
       <h1 className="text-4xl font-bold mb-6">Saving Commands</h1>
       <p className="text-white/70 mb-4">

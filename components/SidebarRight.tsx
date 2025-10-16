@@ -10,7 +10,7 @@ export default function SidebarRight({
   sections = ["Install via npm", "Install via yarn", "Verify Installation"], // Default data
 }: SidebarRightProps) {
   return (
-    <aside className="w-64 shrink-0 hidden xl:block h-[calc(100vh-70px)] bg-[#0F0F0F] p-6 text-sm overflow-y-auto mt-16">
+    <aside className="h-[100vh] mr-20 text-sm overflow-y-auto mt-14 sticky top-[70px] pt-4 hidden md:block w-full">
       {/* Heading */}
       <div className="text-[#8f8f8f] mb-4 font-semibold uppercase tracking-wide text-xs">
         On this page

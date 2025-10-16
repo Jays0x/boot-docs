@@ -17,17 +17,15 @@ export default function Page() {
   ];
 
   return (
-    <div className="font-sans flex bg-[#0F0F0F] text-white gap-8">
+<div className="flex gap-8 pt-14 pl-20 min-h-screen text-white w-full">
       {/* Main content area */}
-      <main className="flex-1 px-20 pt-16 max-w-[900px] mx-auto">
+      <main className="w-full max-w-[700px] pb-10">
         <ListCommandsPage />
       </main>
 
       {/* Right sidebar */}
-      <aside className="hidden lg:block w-[300px]">
-        <div className="sticky top-20">
+      <aside className="w-full justify-end pl-10 hidden md:flex max-w-[320px]">
           <SidebarRight sections={pageSections} />
-        </div>
       </aside>
     </div>
   );

@@ -33,19 +33,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${arimo.variable} ${robotoMono.variable} antialiased bg-[#0F0F0F] text-white`}
+        className={`${arimo.variable} ${robotoMono.variable} antialiased bg-[#0F0F0F] text-white overflow-x-hidden`}
       >
         {/* 🔝 Fixed Navbar */}
-        <header className="fixed top-0 left-0 right-0 h-[70px] bg-[#0F0F0F] border-b border-[#fff]/10 flex items-center px-6 md:px-20 z-50">
+        <header className="fixed top-0 left-0 right-0 h-[70px] bg-[#0F0F0F] border-b border-[#fff]/10 flex items-center px-6 md:px-20 z-50 ">
           <Navbar />
         </header>
 
-        <div className="container flex gap-10">
+        <div className="container flex w-full">
           <div className="w-[20%] h-screen bg-[#0F0F0F] fixed top-0 items-center">
             <div className="flex items-center justify-center w-full"><SidebarLeft /></div>
           </div>
 
-          <div className="ml-[320px] w-full mx-auto z-20">
+          <div className="ml-[280px] w-full mx-auto z-20 ">
             {children}
           </div>
 

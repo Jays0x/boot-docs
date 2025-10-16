@@ -5,7 +5,7 @@ import { CodeBlockTabs } from "../CodeBlock";
 
 export default function VersionPage() {
   return (
-    <div className="font-sans mt-12 w-[700px] space-y-12">
+    <div className="font-sans mt-12 space-y-12 w-full">
       {/* Page Title */}
       <h1 className="text-4xl font-bold mb-6">Version Management</h1>
       <p className="text-white/70 mb-6">
