@@ -47,10 +47,10 @@ function IntroductionPage() {
           <strong>Boot</strong> is a lightweight yet powerful <strong>command-line interface (CLI)</strong> tool that helps developers:
         </p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4">
-          <li>💾 <strong>Save and reuse commands</strong> — so you don’t have to remember or retype them.</li>
-          <li>🧰 <strong>Scaffold projects instantly</strong> — using predefined or custom templates.</li>
-          <li>☁️ <strong>Sync commands with GitHub</strong> — so your saved commands travel with you anywhere.</li>
-          <li>⚡ <strong>Automate repetitive workflows</strong> — like deployments, installations, or repo setups.</li>
+          <li><strong>Save and reuse commands</strong> — so you don’t have to remember or retype them.</li>
+          <li><strong>Scaffold projects instantly</strong> — using predefined or custom templates.</li>
+          <li><strong>Sync commands with GitHub</strong> — so your saved commands travel with you anywhere.</li>
+          <li><strong>Automate repetitive workflows</strong> — like deployments, installations, or repo setups.</li>
         </ul>
         <p className="text-white/70 mb-3">Example:</p>
         <CodeBlockTabs
@@ -67,11 +67,11 @@ function IntroductionPage() {
           Developers often switch between frameworks, projects, and devices — which means retyping the same commands or reconfiguring environments. Boot eliminates that friction by letting you <strong>save</strong>, <strong>reuse</strong>, and <strong>sync</strong> your development commands effortlessly.
         </p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4">
-          <li>🚀 <strong>Save time:</strong> No more retyping long terminal commands.</li>
-          <li>🧠 <strong>Stay organized:</strong> Store all commands in one place.</li>
-          <li>🌍 <strong>Sync with GitHub:</strong> Access your saved commands anywhere, anytime.</li>
-          <li>🧰 <strong>Scaffold projects:</strong> Bootstrap new projects in seconds.</li>
-          <li>⚡ <strong>Boost productivity:</strong> Automate your setup and deployment routines.</li>
+          <li><strong>Save time:</strong> No more retyping long terminal commands.</li>
+          <li><strong>Stay organized:</strong> Store all commands in one place.</li>
+          <li><strong>Sync with GitHub:</strong> Access your saved commands anywhere, anytime.</li>
+          <li><strong>Scaffold projects:</strong> Bootstrap new projects in seconds.</li>
+          <li><strong>Boost productivity:</strong> Automate your setup and deployment routines.</li>
         </ul>
       </section>
 
