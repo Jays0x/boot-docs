@@ -8,9 +8,9 @@ interface BadgeProps {
 function Badge({ label, className }: BadgeProps) {
   return (
     <div
-      className={`inline-flex items-center bg-[#2C2C2C] h-[25px] px-3 rounded-[5px] border border-white/10 text-sm font-medium whitespace-normal max-w-[500px] ${className}`}
+      className={`inline-flex items-center bg-[#2C2C2C] h-[25px] px-3 rounded-[5px] border border-white/10 text-sm font-medium whitespace-normal max-w-[800px] ${className}`}
     >
-      <p>{label}</p>
+      <div>{label}</div>
     </div>
   );
 }

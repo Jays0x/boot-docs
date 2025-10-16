@@ -9,12 +9,12 @@ export default function CreateCommandsPage() {
     <div className="font-sans mt-12 w-[700px] space-y-12">
       {/* Title */}
       <h1 className="text-4xl font-bold mb-6">Creating Projects</h1>
-      <p className="text-white/70 mb-4">
+      <div className="text-white/70 mb-4">
         The <Badge label="boot create" /> command helps you quickly bootstrap a new project using popular frameworks such as{" "}
         <strong>Next.js</strong>, <strong>Express</strong>, <strong>NestJS</strong>, and{" "}
         <strong>React Native</strong>. You can also customize setup options like package managers,
         dependencies, and configurations.
-      </p>
+      </div>
 
       {/* Overview */}
       <section className="space-y-4">

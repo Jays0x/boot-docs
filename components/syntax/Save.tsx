@@ -28,21 +28,21 @@ export default function SaveCommandsPage() {
       {/* Save a Command */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Save a Command</h2>
-        <p className="text-white/70">
+        <div className="text-white/70">
           To save a new command, use <Badge label="boot save" /> followed by an alias and the full
           command you want to store:
-        </p>
+        </div>
 
         <CodeBlockTabs
           singleCode={`boot save serve "npm run dev"`}
           type="bash"
         />
 
-        <p className="text-white/70">
+        <div className="text-white/70">
           This saves <code className="text-gray-400">npm run dev</code> under the alias
           <code className="text-gray-400"> serve</code>. You can later run it using
           <Badge label="boot run serve" />.
-        </p>
+        </div>
       </section>
 
       {/* Example Variations */}
@@ -83,11 +83,11 @@ export default function SaveCommandsPage() {
       {/* Where Commands Are Stored */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Where Commands Are Stored</h2>
-        <p className="text-white/70">
+        <div className="text-white/70">
           Boot saves all commands locally in a configuration file inside your system.
           If you&apos;ve enabled <Badge label="GitHub Sync" />, your saved commands will also be
           synced to your GitHub account, allowing you to access them from any device.
-        </p>
+        </div>
 
         <p className="text-white/70">
           Each saved command includes its alias, command string, and metadata (like timestamps

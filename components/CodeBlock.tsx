@@ -5,7 +5,7 @@ import { Copy } from "lucide-react";
 
 interface CodeBlockProps {
   code: string;
-  type?: "cmd" | "bash" | "powershell" | "zsh" | "sh" | "shell" | "terminal" | "text";
+  type?: "cmd" | "bash" | "powershell" | "zsh" | "sh" | "shell" | "terminal" | "text" | "json";
 }
 
 interface TabCodeBlockProps {

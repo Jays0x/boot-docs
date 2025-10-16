@@ -17,7 +17,7 @@ export const sidebarData = [
       { title: "Create", href: "/syntax/create" },
       { title: "List", href: "/syntax/list" },
       { title: "Run", href: "/syntax/run" },
-      { title: "Remove", href: "/syntaxremove" },
+      { title: "Remove", href: "/syntax/remove" },
     ],
   },
   {
