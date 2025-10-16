@@ -5,23 +5,29 @@ import InstallationPage from "@/components/installation/installation-page";
 import SidebarRight from "@/components/SidebarRight";
 
 export default function Page() {
-  // Define the sections dynamically for the right sidebar
   const pageSections = [
-    "Install via npm",
-    "Install via yarn",
+    "Prerequisites",
+    "Installation Methods",
+    "Updating Boot",
+    "First-Time Setup",
+    "Enable GitHub Sync",
     "Verify Installation",
-    "Configuration Tips",
+    "Next Steps",
   ];
 
   return (
-    <div className="font-sans flex min-h-screen bg-[#0f0f0f] text-white gap-3">
+    <div className="font-sans flex bg-[#0F0F0F] text-white gap-8">
       {/* Main content area */}
-      <main className="flex-1 px-8 pt-15 z-20">
+      <main className="flex-1 px-20 pt-16 max-w-[900px] mx-auto">
         <InstallationPage />
       </main>
 
       {/* Right sidebar */}
-      <div className="fixed right-50 top-0 pt-5"><SidebarRight sections={pageSections} /></div>
+      <aside className="hidden lg:block w-[300px]">
+        <div className="sticky top-20">
+          <SidebarRight sections={pageSections} />
+        </div>
+      </aside>
     </div>
   );
 }

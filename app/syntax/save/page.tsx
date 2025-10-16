@@ -2,26 +2,24 @@
 
 import React from "react";
 import SidebarRight from "@/components/SidebarRight";
-import IntroductionPage from "@/components/introduction/Introduction";
-import { Analytics } from "@vercel/analytics/next";
+import SaveCommandsPage from "@/components/syntax/Save";
 
 export default function Page() {
-  // Define the sections dynamically for the right sidebar
   const pageSections = [
-    "Introduction",
-    "What Is Boot?",
-    "Why Boot?",
-    "Key Features",
-    "Example Use Cases",
+    "Overview",
+    "Save a Command",
+    "Example Variations",
+    "Where Commands Are Stored",
+    "Tips for Using Save",
     "Next Steps",
   ];
 
+
   return (
-    <div className="flex min-h-screen bg-[#0f0f0f] text-white gap-8">
-      <Analytics />
+    <div className="font-sans flex bg-[#0F0F0F] text-white gap-8">
       {/* Main content area */}
       <main className="flex-1 px-20 pt-16 max-w-[900px] mx-auto">
-        <IntroductionPage />
+        <SaveCommandsPage />
       </main>
 
       {/* Right sidebar */}

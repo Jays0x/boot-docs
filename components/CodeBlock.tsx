@@ -56,7 +56,7 @@ export function CodeBlock({ code, type }: CodeBlockProps) {
   };
 
   return (
-    <div className="relative bg-[#0F0F0F] border border-white/10 rounded-lg font-mono text-sm h-full">
+    <div className="relative bg-[#0F0F0F] border border-white/10 rounded-lg font-mono text-sm">
       <div className="bg-[#181818] px-3 py-2 rounded-t-[10px] border-b border-white/10 flex justify-between items-center">
         <p>{type}</p>
         <div

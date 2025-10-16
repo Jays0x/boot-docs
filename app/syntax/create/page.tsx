@@ -2,26 +2,28 @@
 
 import React from "react";
 import SidebarRight from "@/components/SidebarRight";
-import IntroductionPage from "@/components/introduction/Introduction";
-import { Analytics } from "@vercel/analytics/next";
+import CreateCommandsPage from "@/components/syntax/Create";
 
 export default function Page() {
-  // Define the sections dynamically for the right sidebar
+  // Sidebar section headings
   const pageSections = [
-    "Introduction",
-    "What Is Boot?",
-    "Why Boot?",
-    "Key Features",
-    "Example Use Cases",
+    "Overview",
+    "Basic Usage",
+    "Example: Next.js Project",
+    "Example: Express API",
+    "Example: NestJS Application",
+    "Example: React Native App",
+    "Optional Flags",
+    "Full Example",
+    "Interactive Setup",
     "Next Steps",
   ];
 
   return (
-    <div className="flex min-h-screen bg-[#0f0f0f] text-white gap-8">
-      <Analytics />
+    <div className="font-sans flex bg-[#0F0F0F] text-white gap-8">
       {/* Main content area */}
       <main className="flex-1 px-20 pt-16 max-w-[900px] mx-auto">
-        <IntroductionPage />
+        <CreateCommandsPage />
       </main>
 
       {/* Right sidebar */}

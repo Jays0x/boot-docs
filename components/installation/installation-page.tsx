@@ -70,9 +70,9 @@ function InstallationPage() {
           <h2 className='text-2xl font-semibold mb-2'>Enable GitHub Sync</h2>
           <p className='text-white/70'>Sync your saved commands across devices:</p>
           <CodeBlockTabs singleCode={`boot sync github`} type="bash" />
-          <p className='text-white/70 mt-2'>
+          <div className='text-white/70 mt-2'>
             Boot will create/use a private repository <Badge label="boot-sync" /> for your commands. Pull on other devices using <code>boot sync pull</code>.
-          </p>
+          </div>
 
           <Badge label="Tip" />
           <table className='table-auto text-left text-gray-300 border-collapse border border-white/70 mt-4 w-full rounded-lg overflow-hidden'>
@@ -84,19 +84,19 @@ function InstallationPage() {
             </thead>
             <tbody>
               <tr className='border-b border-white/10'>
-                <td className='px-3 py-3'><code><Badge label='boot sync login'/></code></td>
+                <td className='pl-3 pr-8 py-3 w-[280px]'><code><Badge label='boot sync login'/></code></td>
                 <td className='px-3 py-3'>Connect Boot to your GitHub account</td>
               </tr>
               <tr className='border-b border-white/10'>
-                <td className='px-3 py-3'><code><Badge label='boot sync --push'/></code></td>
+                <td className='pl-3 pr-8 py-3 w-[280px]'><code><Badge label='boot sync --push'/></code></td>
                 <td className='px-3 py-3'>Upload saved commands/templates to GitHub</td>
               </tr>
               <tr className='border-b border-white/10'>
-                <td className='px-3 py-3'><code><Badge label='boot sync --pull'/></code></td>
+                <td className='pl-3 pr-8 py-3 w-[280px]'><code><Badge label='boot sync --pull'/></code></td>
                 <td className='px-3 py-3'>Download latest setup from GitHub</td>
               </tr>
               <tr>
-                <td className='px-3 py-3'><code><Badge label='boot sync logout'/></code></td>
+                <td className='pl-3 pr-8 py-3 w-[280px]'><code><Badge label='boot sync logout'/></code></td>
                 <td className='px-3 py-3'>Log out from your GitHub account</td>
               </tr>
             </tbody>
@@ -109,12 +109,12 @@ function InstallationPage() {
           <CodeBlockTabs singleCode={`boot help`} type="bash" />
           <p className='text-white/70 mt-2'>Expected output:</p>
           <CodeBlockTabs singleCode={`Available Commands:
-            save        Save a new command
-            run         Run a saved command
-            create      Scaffold a new project
-            list        Show all saved commands
-            sync        Sync commands with GitHub
-            delete      Remove a saved command`} 
+  save        Save a new command
+  run         Run a saved command
+  create      Scaffold a new project
+  list        Show all saved commands
+  sync        Sync commands with GitHub
+  delete      Remove a saved command`} 
             type="bash"
           />
           <p className='text-green-400 font-semibold mt-2'>🎉 Congratulations! Boot CLI is installed successfully.</p>

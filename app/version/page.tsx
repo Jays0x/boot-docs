@@ -2,26 +2,24 @@
 
 import React from "react";
 import SidebarRight from "@/components/SidebarRight";
-import IntroductionPage from "@/components/introduction/Introduction";
-import { Analytics } from "@vercel/analytics/next";
+import VersionPage from "@/components/version/Version";
 
 export default function Page() {
-  // Define the sections dynamically for the right sidebar
+  // Sidebar sections for Version documentation
   const pageSections = [
-    "Introduction",
-    "What Is Boot?",
-    "Why Boot?",
-    "Key Features",
-    "Example Use Cases",
+    "Check Current Version",
+    "Upgrade Boot CLI",
+    "Rollback to Previous Version",
+    "View Version History",
+    "Using Beta Releases",
     "Next Steps",
   ];
 
   return (
-    <div className="flex min-h-screen bg-[#0f0f0f] text-white gap-8">
-      <Analytics />
+    <div className="font-sans flex bg-[#0F0F0F] text-white gap-8">
       {/* Main content area */}
       <main className="flex-1 px-20 pt-16 max-w-[900px] mx-auto">
-        <IntroductionPage />
+        <VersionPage />
       </main>
 
       {/* Right sidebar */}

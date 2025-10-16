@@ -7,7 +7,7 @@ export const sidebarData = [
       { title: "Introduction", href: "/" },
       { title: "Installation", href: "/installation" },
       { title: "Version", href: "/version" },
-      { title: "Providers", href: "/providers" },
+      // { title: "Providers", href: "/providers" },
     ],
   },
   {

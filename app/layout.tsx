@@ -45,7 +45,7 @@ export default function RootLayout({
             <div className="flex items-center justify-center w-full"><SidebarLeft /></div>
           </div>
 
-          <div className="ml-[380px] w-full">
+          <div className="ml-[320px] w-full mx-auto z-20">
             {children}
           </div>
 
